@@ -14,6 +14,7 @@ export class CreateNotionSpeakerDto {
 		Role: createRichText
 		Date: createDate
 		Email: createRichText
+		Bio: createRichText
 		Topic: createRichText
 		Name: createTitle
 	}
