@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { HttpModule } from '@nestjs/axios';
 import { NotionService } from './notion.service';
-import { NotionController } from './notion.controller';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
@@ -23,7 +22,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 	})
 
 	],
- 	controllers: [NotionController],
+ 	controllers: [],
   	providers: [NotionService],
   	exports:[HttpModule]
 })
