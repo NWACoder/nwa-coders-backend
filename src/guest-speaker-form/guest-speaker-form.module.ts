@@ -4,9 +4,10 @@ import { GuestSpeakerFormController } from './guest-speaker-form.controller';
 import { NotionService } from 'src/notion/notion.service';
 import { NotionModule } from 'src/notion/notion.module';
 
+
 @Module({
 	imports: [NotionModule],
 	controllers: [GuestSpeakerFormController],
-	providers: [GuestSpeakerFormService,NotionService]
+	providers: [GuestSpeakerFormService, NotionService]
 })
 export class GuestSpeakerFormModule {}
