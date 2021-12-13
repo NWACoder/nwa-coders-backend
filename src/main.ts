@@ -6,7 +6,7 @@ async function bootstrap() {
 	const app = await NestFactory.create(AppModule);
 	const configService = app.get(ConfigService);
 
-	if(configService.get('ORIGIN') !== '*'){
+	if(configService.get('ORIGIN') == '*'){
 		app.enableCors({ origin: '*' });
 	}else{
 		const pattern = `^((https?:\/\/)?.*?(${configService.get('ORIGIN')}+))($|\/.*$)`;
