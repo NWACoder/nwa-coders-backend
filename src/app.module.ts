@@ -4,9 +4,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { NotionModule } from './notion/notion.module';
 import { GuestSpeakerFormModule } from './guest-speaker-form/guest-speaker-form.module';
+import { EventsModule } from './events/events.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({isGlobal: true}), NotionModule, GuestSpeakerFormModule],
+  imports: [ConfigModule.forRoot({isGlobal: true}), NotionModule, GuestSpeakerFormModule, EventsModule],
   controllers: [AppController],
   providers: [AppService],
 })
