@@ -1,7 +1,7 @@
-import { BadRequestException, Injectable, ParseUUIDPipe } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { map } from 'rxjs/operators';
 import { NotionService } from 'src/notion/notion.service';
-import { ListDatabasesResponse, QueryDatabaseResponse } from 'src/types/notionApi';
+import { ListDatabasesResponse } from 'src/types/notionApi';
 import { CreateEventDto } from './dto/create-event.dto';
 import { GetEventsDto } from './dto/get-events.dto';
 import { UpdateEventDto } from './dto/update-event.dto';

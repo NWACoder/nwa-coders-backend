@@ -1,9 +1,9 @@
 import { HttpService } from '@nestjs/axios';
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { AxiosError, AxiosResponse } from 'axios';
-import { Observable, OperatorFunction } from 'rxjs';
+import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { QueryDatabaseParameters, QueryDatabaseResponse } from 'src/types/notionApi';
+import { QueryDatabaseParameters } from 'src/types/notionApi';
 import { CreateNotionSpeakerDto } from './dto/create-notion-speaker.dto';
 
 @Injectable()
